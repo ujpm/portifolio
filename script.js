@@ -271,7 +271,24 @@ document.addEventListener('DOMContentLoaded', function() {
         console.error('Error initializing portfolio:', error);
     }
 });
+// Web Vitals Performance Tracking
+function reportWebVitals() {
+    if ('performance' in window) {
+        const vitals = {
+            'First Contentful Paint': performance.getEntriesByType('paint')
+                .find(entry => entry.name === 'first-contentful-paint')?.startTime,
+            'Largest Contentful Paint': performance.getEntriesByType('largest-contentful-paint')[0]?.startTime,
+            'First Input Delay': performance.getEntriesByType('first-input')[0]?.processingStart,
+            'Cumulative Layout Shift': performance.getEntriesByType('layout-shift')[0]?.value
+        };
 
+        // You could send these to your analytics service
+        console.log('Web Vitals:', vitals);
+    }
+}
+
+// Run Web Vitals tracking when page loads
+window.addEventListener('load', reportWebVitals);
 // Navbar scroll behavior
 window.addEventListener('scroll', function() {
     const navbar = document.getElementById('navbar');
