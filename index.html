@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jean Pierre - Portfolio</title>
+    <link rel="icon" type="image/png" href="assets/jp-favicon.jpg">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Animation Libraries -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">JP</div>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-particles" id="particles-js"></div>
+        <div class="hero-content" data-aos="fade-up">
+            <div class="hero-left">
+                <div class="profile-container">
+                    <img src="assets/profile-image.png" alt="Jean Pierre" class="profile-image">
+                    <div class="profile-blob"></div>
+                </div>
+            </div>
+            <div class="hero-right">
+                <div class="hero-text-content">
+                    <h1 class="glitch" data-text="Jean Pierre">Jean Pierre</h1>
+                    <div class="role-container">
+                        <span class="role-prefix">I'm a</span>
+                        <div class="typed-container">
+                            <span class="typed-text"></span><span class="cursor">&nbsp;</span>
+                        </div>
+                    </div>
+                    <p class="hero-description animate__animated animate__fadeInUp">
+                        Bridging Healthcare and Technology through Innovation
+                        <span class="tech-stack">
+                            <i class="fas fa-dna"></i>
+                            <i class="fas fa-code"></i>
+                            <i class="fas fa-brain"></i>
+                        </span>
+                    </p>
+                    <div class="cta-buttons animate__animated animate__fadeInUp">
+                        <a href="#projects" class="btn primary">View Projects</a>
+                        <a href="#contact" class="btn secondary">Contact Me</a>
+                    </div>
+                </div>
+                <div class="hero-background">
+                    <div class="circuit-board"></div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <div class="arrows">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about" data-aos="fade-up">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <div class="about-text" data-aos="fade-right">
+                <p>I am a Biomedical Laboratory Sciences student and passionate front-end developer with a strong interest in leveraging technology to solve real-world problems. My journey is fueled by a commitment to continuous learning, innovation, and making a meaningful impact, particularly in healthcare, and well living.</p>
+                <button id="myStoryBtn" class="btn primary">My Story</button>
+                <div class="meme-lab" data-aos="fade-up">
+                    <img src="assets/meme-lab.jpg" alt="Lab Tech Meme">
+                    <div class="quote">I'm a lab tech. I keep doctors from killing you</div>
+                </div>
+            </div>
+            <div class="about-images" data-aos="fade-left">
+                <img src="assets/me-in-lab.jpg" alt="In the Laboratory" class="lab-image">
+                <img src="assets/me-hobby.jpg" alt="Music Hobby" class="hobby-image">
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects" data-aos="fade-up">
+        <h2>Featured Projects</h2>
+        <div class="project-filter" data-aos="fade-up">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="healthcare">Healthcare</button>
+            <button class="filter-btn" data-filter="sustainability">Sustainability</button>
+            <button class="filter-btn" data-filter="ai">AI</button>
+            <button class="filter-btn" data-filter="tools">Tools</button>
+        </div>
+        <div class="project-grid">
+            <div class="project-card healthcare" data-aos="fade-up">
+                <img src="assets/FASE-1-Certificate.png" alt="FASE-1 Project">
+                <div class="project-overlay">
+                    <div class="project-badges">
+                        <span class="award-badge">🏆 3rd Place</span>
+                        <span class="duration-badge">📆 4 Days</span>
+                    </div>
+                    <h3>FASE-1</h3>
+                    <h4>Empowering Life-Saving Skills</h4>
+                    <p>A platform making life-saving first aid skills accessible through 12 practical modules covering CPR, AED use, and choking response.</p>
+                    <div class="project-features">
+                        <span>First Aid Training</span>
+                        <span>Interactive Modules</span>
+                        <span>Emergency Response</span>
+                    </div>
+                    <a href="https://ujpm.github.io/FASE-1-rebuild/index.html" class="btn" target="_blank">View Project</a>
+                </div>
+            </div>
+
+            <div class="project-card sustainability" data-aos="fade-up" data-aos-delay="100">
+                <img src="assets/hose-green-logo.png" alt="HOSE-Green">
+                <div class="project-overlay">
+                    <h3>HOSE-Green</h3>
+                    <h4>Healing Our Shared Environment</h4>
+                    <p>Mobilizes eco-conscious communities to participate in sustainability campaigns with gamified rewards.</p>
+                    <div class="project-features">
+                        <span>Eco-campaigns</span>
+                        <span>Action Tracking</span>
+                        <span>Reward System</span>
+                    </div>
+                    <a href="#" class="btn" target="_blank">Learn More</a>
+                </div>
+            </div>
+
+            <div class="project-card sustainability" data-aos="fade-up" data-aos-delay="200">
+                <img src="assets/HOSE-logo.png" alt="HOSE">
+                <div class="project-overlay">
+                    <h3>HOSE</h3>
+                    <h4>Hub of Social Empowerment</h4>
+                    <p>Track and improve social and environmental contributions through impact dashboards.</p>
+                    <div class="project-features">
+                        <span>Impact Tracking</span>
+                        <span>Community Tools</span>
+                        <span>Reward Systems</span>
+                    </div>
+                    <a href="#" class="btn" target="_blank">Learn More</a>
+                </div>
+            </div>
+
+            <div class="project-card ai sustainability" data-aos="fade-up" data-aos-delay="300">
+                <img src="assets/logo-snapcity.png" alt="SnapCity">
+                <div class="project-overlay">
+                    <div class="project-badges">
+                        <span class="award-badge">🏆 Certificate of Recognition</span>
+                    </div>
+                    <h3>SnapCity</h3>
+                    <h4>Gamifying Urban Engagement</h4>
+                    <p>AI-powered platform for addressing urban challenges through gamification.</p>
+                    <div class="project-features">
+                        <span>Real-time Reporting</span>
+                        <span>Mission System</span>
+                        <span>Citizen Rewards</span>
+                    </div>
+                    <a href="#" class="btn" target="_blank">View Project</a>
+                </div>
+            </div>
+
+            <div class="project-card healthcare" data-aos="fade-up" data-aos-delay="400">
+                <img src="assets/medimate-logo.webp" alt="Medimate">
+                <div class="project-overlay">
+                    <h3>Medimate</h3>
+                    <h4>Clinical Care Management</h4>
+                    <p>A user-friendly platform to improve clinical care by managing patient data and healthcare workflows efficiently.</p>
+                    <div class="project-features">
+                        <span>Patient Management</span>
+                        <span>Workflow Optimization</span>
+                        <span>Healthcare Analytics</span>
+                    </div>
+                    <a href="#" class="btn" target="_blank">View Demo</a>
+                </div>
+            </div>
+
+            <div class="project-card healthcare ai" data-aos="fade-up" data-aos-delay="500">
+                <img src="assets/microsmart-preview.jpg" alt="MicroSmart">
+                <div class="project-overlay">
+                    <h3>MicroSmart</h3>
+                    <h4>AI-Powered Microscopy Analysis</h4>
+                    <p>Intelligent tool for microscopic examination that identifies parasites and bacteria using AI.</p>
+                    <div class="project-features">
+                        <span>Live Analysis</span>
+                        <span>AI Detection</span>
+                        <span>Lab Diagnostics</span>
+                    </div>
+                    <a href="#" class="btn" target="_blank">Learn More</a>
+                </div>
+            </div>
+
+            <div class="project-card tools" data-aos="fade-up" data-aos-delay="600">
+                <img src="assets/newsfella-preview.jpg" alt="Newsfella">
+                <div class="project-overlay">
+                    <h3>Newsfella</h3>
+                    <h4>Automated News Delivery</h4>
+                    <p>An automated tool that fetches and delivers personalized daily news updates via email.</p>
+                    <div class="project-features">
+                        <span>News Aggregation</span>
+                        <span>Email Delivery</span>
+                        <span>Custom Topics</span>
+                    </div>
+                    <a href="#" class="btn" target="_blank">Try It</a>
+                </div>
+            </div>
+
+            <div class="project-card healthcare ai" data-aos="fade-up" data-aos-delay="150">
+                <img src="assets/aslan-ai-logo.png" alt="Aslan AI">
+                <div class="project-overlay">
+                    <div class="project-badges">
+                        <span class="award-badge">🏆 Certificate of Recognition</span>
+                    </div>
+                    <h3>Aslan AI</h3>
+                    <h4>AI-Powered Mental Health Support</h4>
+                    <p>An innovative AI solution providing real-time emotional support and relapse prevention for mental health and addiction recovery.</p>
+                    <div class="project-features">
+                        <span>Real-time Support</span>
+                        <span>Emotion Analysis</span>
+                        <span>Crisis Prevention</span>
+                        <span>Adaptive Response</span>
+                    </div>
+                    <div class="project-tech">
+                        <span>AI</span>
+                        <span>Healthcare</span>
+                        <span>Mental Health</span>
+                    </div>
+                    <a href="https://ujpm.github.io/aslan-ai/" class="btn" target="_blank">View Project</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills" data-aos="fade-up">
+        <h2>Skills & Expertise</h2>
+        <div class="skills-content">
+            <div class="skills-category" data-aos="fade-right">
+                <h3><i class="fas fa-flask"></i> Laboratory Sciences</h3>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <span class="skill-name">Clinical Chemistry</span>
+                        <div class="skill-bar"><div class="skill-progress" style="width: 90%"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Hematology</span>
+                        <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Microbiology</span>
+                        <div class="skill-bar"><div class="skill-progress" style="width: 88%"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Lab Diagnostics</span>
+                        <div class="skill-bar"><div class="skill-progress" style="width: 92%"></div></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skills-category" data-aos="fade-left">
+                <h3><i class="fas fa-code"></i> Development</h3>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <span class="skill-name">Frontend (HTML/CSS/JS)</span>
+                        <div class="skill-bar"><div class="skill-progress" style="width: 95%"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">React & Next.js</span>
+                        <div class="skill-bar"><div class="skill-progress" style="width: 88%"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Node.js</span>
+                        <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Flutter</span>
+                        <div class="skill-bar"><div class="skill-progress" style="width: 80%"></div></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skills-category" data-aos="fade-right">
+                <h3><i class="fas fa-database"></i> Database & Tools</h3>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <span class="skill-name">MongoDB</span>
+                        <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">SQL</span>
+                        <div class="skill-bar"><div class="skill-progress" style="width: 82%"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Git & Version Control</span>
+                        <div class="skill-bar"><div class="skill-progress" style="width: 88%"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">API Integration</span>
+                        <div class="skill-bar"><div class="skill-progress" style="width: 90%"></div></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skills-category" data-aos="fade-left">
+                <h3><i class="fas fa-brain"></i> Soft Skills</h3>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <span class="skill-name">Problem Solving</span>
+                        <div class="skill-bar"><div class="skill-progress" style="width: 95%"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Research & Analysis</span>
+                        <div class="skill-bar"><div class="skill-progress" style="width: 90%"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Team Collaboration</span>
+                        <div class="skill-bar"><div class="skill-progress" style="width: 88%"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Project Management</span>
+                        <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="certifications" class="certifications" data-aos="fade-up">
+        <h2>Learning Journey</h2>
+        <div class="cert-timeline">
+            <div class="cert-item" data-aos="fade-right">
+                <div class="cert-content">
+                    <div class="cert-date">2024</div>
+                    <h3 class="cert-title">AI Career Essentials (AICE)</h3>
+                    <div class="cert-issuer">ALX Africa</div>
+                    <p class="cert-description">Comprehensive training in artificial intelligence fundamentals, machine learning, and AI applications in modern technology. Developed skills in implementing AI solutions and understanding their real-world impact.</p>
+                    <img src="assets/alx-aice-ai-career-essentials-certificate-uwizeyimana-jean.png" alt="AICE Certificate" class="cert-image">
+                </div>
+            </div>
+
+            <div class="cert-item" data-aos="fade-left">
+                <div class="cert-content">
+                    <div class="cert-date">2024</div>
+                    <h3 class="cert-title">Virtual Assistant Course</h3>
+                    <div class="cert-issuer">ALX Africa</div>
+                    <p class="cert-description">Mastered essential skills in digital assistance, task management, and online collaboration. Learned to leverage technology for efficient remote work and client support.</p>
+                    <img src="assets/virtual-assistant-certificate-uwizeyimana-jean.png" alt="VA Certificate" class="cert-image">
+                </div>
+            </div>
+
+            <div class="cert-item" data-aos="fade-right">
+                <div class="cert-content">
+                    <div class="cert-date">2024</div>
+                    <h3 class="cert-title">Programming Fundamentals</h3>
+                    <div class="cert-issuer">Udacity</div>
+                    <p class="cert-description">Deep dive into core programming concepts, data structures, and algorithms. Built a strong foundation in software development principles and best practices.</p>
+                    <img src="assets/udacity-certificate-jean-pierre-image.png" alt="Udacity" class="cert-image">
+                </div>
+            </div>
+
+            <div class="cert-item" data-aos="fade-left">
+                <div class="cert-content">
+                    <div class="cert-date">2024</div>
+                    <h3 class="cert-title">FASE-1 Project</h3>
+                    <div class="cert-issuer">3rd Place Winner at MiniMedi</div>
+                    <p class="cert-description">Award-winning project at MiniMedi 2024, focused on life-saving skills and healthcare innovation. Developed a comprehensive platform for medical education and emergency response.</p>
+                    <img src="assets/fase-show.jpeg" alt="FASE-1" class="cert-image">
+                </div>
+            </div>
+
+            <div class="cert-item" data-aos="fade-right">
+                <div class="cert-content">
+                    <div class="cert-date">2024</div>
+                    <h3 class="cert-title">SnapCity Project</h3>
+                    <div class="cert-issuer">Urban Innovation</div>
+                    <p class="cert-description">Innovative urban development project combining technology and community engagement. Created solutions for smart city planning and sustainable development.</p>
+                    <img src="assets/snapcity-logo.png" alt="SnapCity" class="cert-image">
+                </div>
+            </div>
+
+            <div class="cert-item" data-aos="fade-left">
+                <div class="cert-content">
+                    <div class="cert-date">2023</div>
+                    <h3 class="cert-title">Front-End Web Development</h3>
+                    <div class="cert-issuer">freeCodeCamp</div>
+                    <p class="cert-description">Mastered modern web development technologies including HTML5, CSS3, and JavaScript. Created responsive and interactive web applications.</p>
+                    <a href="#" class="cert-link" target="_blank">View Certificate <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact" data-aos="fade-up">
+        <h2>Get in Touch</h2>
+        <div class="contact-buttons">
+            <button class="contact-btn" id="connectBtn">
+                <i class="fas fa-network-wired"></i>
+                Connect
+            </button>
+            <button class="contact-btn" id="contactBtn">
+                <i class="fas fa-envelope"></i>
+                Contact
+            </button>
+            <button class="contact-btn" id="hireBtn">
+                <i class="fas fa-briefcase"></i>
+                Hire
+            </button>
+            <button class="contact-btn" id="collaborateBtn">
+                <i class="fas fa-handshake"></i>
+                Collaborate
+            </button>
+            <button class="contact-btn" id="slapBtn">
+                <i class="fas fa-hand-paper"></i>
+                Slap🥶
+            </button>
+            <button class="contact-btn" id="otherBtn">
+                <i class="fas fa-ellipsis-h"></i>
+                Other...
+            </button>
+        </div>
+
+        <!-- Social Links Panel -->
+        <div id="socialPanel" class="interaction-panel">
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/ujeanpierre45/" target="_blank">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+                <a href="https://github.com/ujpm/" target="_blank">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+                <a href="https://x.com/Uwizeyi30479056" target="_blank">
+                    <i class="fab fa-x-twitter"></i> Twitter
+                </a>
+                <a href="https://devpost.com/uwizeyimanajp2?ref_content=user-portfolio&ref_feature=portfolio&ref_medium=global-nav" target="_blank">
+                    <i class="fas fa-code"></i> Devpost
+                </a>
+                <a href="mailto:uwizeyimanajp2@gmail.com">
+                    <i class="fas fa-envelope"></i> Email
+                </a>
+                <a href="tel:+250790180545">
+                    <i class="fas fa-phone"></i> Call
+                </a>
+                <a href="https://wa.me/250737787395" target="_blank">
+                    <i class="fab fa-whatsapp"></i> WhatsApp
+                </a>
+            </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div id="contactForm" class="interaction-panel">
+            <h3>Send Me a Message</h3>
+            <form>
+                <div class="form-group">
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="btn primary">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Jean Pierre. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://github.com/ujpm/"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/ujeanpierre45/"><i class="fab fa-linkedin"></i></a>
+                <a href="https://x.com/Uwizeyi30479056"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
